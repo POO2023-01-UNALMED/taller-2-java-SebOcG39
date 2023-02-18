@@ -11,8 +11,12 @@ public class Auto {
     
     int cantidadAsientos(){
         int contador = 0;
-        for (Asiento asiento : asientos){
-            contador++;
+        if (asientos != null){
+            for (Asiento asiento : asientos) {
+                if (asiento != null){
+                    contador++;
+                }
+            }
         }
         return contador;
     }

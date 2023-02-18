@@ -6,13 +6,8 @@ public class Asiento {
     String color;
     
     void cambiarColor(String color){
-        String[] colores = {"rojo", "amarillo", "verde", "negro", "blanco"};
-        for (String c : colores){
-            if (color == c){
-                this.color = color;
-                break;
+        if (color == "rojo" || color == "amarillo" || color == "verde" || color == "negro" || color == "blanco"){
+            this.color = color;
             }
         }
-        
-    }
 }
